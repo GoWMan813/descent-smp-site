@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useTheme as useNextTheme } from 'next-themes'
-import { Switch, useTheme } from '@nextui-org/react'
+import { Spacer, Switch, useTheme } from '@nextui-org/react'
 import { Navbar, Link, Text } from "@nextui-org/react";
 import { SunIcon } from "../icons/SunIcon";
 import { MoonIcon } from "../icons/MoonIcon";
@@ -48,23 +48,27 @@ export default function Home() {
           The Story
         </h1>
         <br />
-        <Container sm>
+        <Container sm alignContent='flex-start'>
       <Card css={{ $$cardColor: '$colors$primary' }}>
         <Card.Body>
           <Row justify="center" align="center">
             <Text h6 size={25} color="white" css={{ m: 0 }}>
-            The Descent SMP follows players' descent into anarchy on the weekly bloodmoon.
-            During the bloodmoon players are incentivized to kill as much as possible; this will be done by providing negative status effects the longer they have not killed.
-            Player roles for the upcoming week are determined by the amount of kills achieved during the bloodmoon (roles, and such, are determined by players, with minimal intervention from administrators).
-            During normal weekly activity, players will have stream integration allowing for viewers to positively/negatively impact the streamer. 
-            All redeems will be determined by server administrators before each week.
-            During bloodmoons, negative viewer integration will be boosted allowing negative effects to cause environmental damages.
+            The Descent SMP follows players' descent into anarchy on the weekly bloodmoon.<br/>
+            During the bloodmoon players are incentivized to kill as much as possible; this will be done by providing negative status effects the longer they have not killed.<br/>
+            Player roles for the upcoming week are determined by the amount of kills achieved during the bloodmoon (roles, and such, are determined by players, with minimal intervention from administrators).<br/>
+            During normal weekly activity, players will have stream integration allowing for viewers to positively/negatively impact the streamer.<br/>
+            All redeems will be determined by server administrators before each week.<br/>
+            During bloodmoons, negative viewer integration will be boosted allowing negative effects to cause environmental damages.<br/>
             </Text>
           </Row>
         </Card.Body>
       </Card>
     </Container>
       </main>
+      <footer className={styles.footer}>
+          Built with ♥ by <Spacer x={0.25} />
+            <Link href="https://github.com/GoWMan813" isExternal>GoWMan</Link>
+      </footer>
     </div>
   )
 }

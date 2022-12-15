@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useTheme as useNextTheme } from 'next-themes'
-import { Switch, useTheme } from '@nextui-org/react'
-import { Navbar, Link, Text } from "@nextui-org/react";
+import { Spacer, Switch, useTheme } from '@nextui-org/react'
+import { Navbar, Link, Text, Grid } from "@nextui-org/react";
 import { SunIcon } from "../icons/SunIcon";
 import { MoonIcon } from "../icons/MoonIcon";
 
@@ -47,51 +47,17 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to the <a href="./">Descent SMP</a>!
         </h1>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+<Grid>
+<Image src="/minecraft.png" alt="Minecraft" width={800} height={200} />
+</Grid>
+<Grid>
+<Image src="/lg_group.png" alt="Minecraft" width={564} height={654} />
+</Grid>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+          Built with ♥ by 
+            <Link href="https://github.com/GoWMan813" isExternal>GoWMan</Link>
       </footer>
     </div>
   )
