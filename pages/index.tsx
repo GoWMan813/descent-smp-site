@@ -37,8 +37,8 @@ export default function Home() {
       <Switch
         checked={isDark}
         onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-        iconOff={<SunIcon filled />}
-        iconOn={<MoonIcon filled />}
+        iconOff={<SunIcon filled size={undefined} height={undefined} width={undefined} label={undefined} />}
+        iconOn={<MoonIcon filled size={undefined} height={undefined} width={undefined} label={undefined} />}
       />
           </Navbar.Item>
         </Navbar.Content>
