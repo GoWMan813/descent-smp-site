@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { Image } from '@nextui-org/react';
 import styles from '../styles/Home.module.css'
 import { useTheme as useNextTheme } from 'next-themes'
 import { Spacer, Switch, useTheme } from '@nextui-org/react'
@@ -48,15 +48,15 @@ export default function Home() {
           Welcome to the <a href="./">Descent SMP</a>!
         </h1>
 <Grid>
-<Image src="/minecraft.png " alt="Minecraft" width={800} height={200} />
+<Image src="minecraft.png" alt="Minecraft" width={800} height={200} />
 </Grid>
 <Grid>
-<Image src="/lg_group.png " alt="Large Group" width={564} height={654} />
+<Image src="lg_group.png" alt="Large Group" width={564} height={654} />
 </Grid>
       </main>
       <footer className={styles.footer}>
           Built with ♥ by <Spacer x={0.25} />
-            <Link href="https://github.com/GoWMan813" isExternal>GoWMan</Link>
+            <Link target="_blank" href="https://github.com/GoWMan813">GoWMan</Link>
       </footer>
     </div>
   )
