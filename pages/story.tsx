@@ -58,7 +58,7 @@ export default function Home() {
             Player roles for the upcoming week are determined by the amount of kills achieved during the bloodmoon (roles, and such, are determined by players, with minimal intervention from administrators).<br/>
             During normal weekly activity, players will have stream integration allowing for viewers to positively/negatively impact the streamer.<br/>
             All redeems will be determined by server administrators before each week.<br/>
-            During bloodmoons, negative viewer integration will be boosted allowing negative effects to cause environmental damages.<br/>
+            During bloodmoons, negative viewer integration will be boosted allowing negative effects to cause environmental damages.
             </Text>
           </Row>
         </Card.Body>

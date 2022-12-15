@@ -48,15 +48,14 @@ export default function Home() {
           Welcome to the <a href="./">Descent SMP</a>!
         </h1>
 <Grid>
-<Image src="/minecraft.png" alt="Minecraft" width={800} height={200} />
+<Image src="../public/minecraft.png" alt="Minecraft" width={800} height={200} />
 </Grid>
 <Grid>
-<Image src="/lg_group.png" alt="Minecraft" width={564} height={654} />
+<Image src="../public/lg_group.png" alt="Minecraft" width={564} height={654} />
 </Grid>
       </main>
-
       <footer className={styles.footer}>
-          Built with ♥ by 
+          Built with ♥ by <Spacer x={0.25} />
             <Link href="https://github.com/GoWMan813" isExternal>GoWMan</Link>
       </footer>
     </div>
