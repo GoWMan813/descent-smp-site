@@ -48,10 +48,10 @@ export default function Home() {
           Welcome to the <a href="./">Descent SMP</a>!
         </h1>
 <Grid>
-<Image src="/minecraft.png" alt="Minecraft" width={800} height={200} />
+<Image src="/minecraft.png " alt="Minecraft" width={800} height={200} />
 </Grid>
 <Grid>
-<Image src="/lg_group.png" alt="Large Group" width={564} height={654} />
+<Image src="/lg_group.png " alt="Large Group" width={564} height={654} />
 </Grid>
       </main>
       <footer className={styles.footer}>
