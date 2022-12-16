@@ -50,7 +50,7 @@ function SMPNavbar() {
         <Image src='bloodMoon256.png' alt='Blood Moon' width={32} height={32} />
         <Spacer x={0.25} />
         <Text b color='inherit' hideIn='xs'>
-          DecentSMP
+          DescentSMP
         </Text>
       </Navbar.Brand>
       <Navbar.Content hideIn='xs' variant='highlight-rounded'>
