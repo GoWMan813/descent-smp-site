@@ -25,10 +25,6 @@ const NavLinks: NavLink[] = [
     href: '/players',
   },
   {
-    name: 'Teams',
-    href: '/teams',
-  },
-  {
     name: 'Content Creators',
     href: '/content-creators',
   },

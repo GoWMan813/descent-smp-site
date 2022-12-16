@@ -9,7 +9,7 @@ export const playercols = [
     },
     {
       key: "title",
-      label: "Title",
+      label: "TITLE",
     },
     {
       key: "status",
@@ -103,7 +103,7 @@ export const playercols = [
     },
     {
         key: "13",
-        name: "greenbanana",
+        name: "Greenbanana",
         role: "Admin",
         title: "Not Quite Ripe",
         status: "Active",
@@ -138,7 +138,7 @@ export const playercols = [
       },
       {
         key: "18",
-        name: "ish",
+        name: "Ish",
         role: "Player",
         title: "",
         status: "Active",
