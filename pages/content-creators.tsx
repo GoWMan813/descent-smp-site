@@ -51,9 +51,13 @@ export default function Creators() {
             target="_blank"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <Avatar
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/0026591c-a2a6-4149-8100-dc6d1b3ea7ea-profile_image-300x300.png"
+          css={{ size: "$20" }}
+        />
+            <h2>WaldoAndFriends</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            Variety streamer from the Netherlands, definitely not 30 yet...  Can you find me?
             </p>
           </a>
         </div>
