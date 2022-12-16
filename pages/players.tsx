@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import { Image } from '@nextui-org/react';
 import styles from '../styles/Home.module.css'
 import { useTheme as useNextTheme } from 'next-themes'
 import { Spacer, Switch, useTheme } from '@nextui-org/react'
-import { Navbar, Link, Text, Grid } from "@nextui-org/react";
+import { Navbar, Link, Text } from "@nextui-org/react";
 import { SunIcon } from "../icons/SunIcon";
 import { MoonIcon } from "../icons/MoonIcon";
+import { Table } from '@nextui-org/react';
+import { playercols, playerrows } from '../components/players';
+import { Image } from '@nextui-org/react';
 
 export default function Home() {
   const { setTheme } = useNextTheme();
@@ -26,9 +28,9 @@ export default function Home() {
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs" variant="highlight-rounded">
-        <Navbar.Link isActive href="/">Home</Navbar.Link>
+        <Navbar.Link href="/">Home</Navbar.Link>
           <Navbar.Link href="/story">Story</Navbar.Link>
-          <Navbar.Link href="/players">Players</Navbar.Link>
+          <Navbar.Link isActive href="/players">Players</Navbar.Link>
           <Navbar.Link href="#">Teams</Navbar.Link>
           <Navbar.Link href="/content-creators">Content Creators</Navbar.Link>
           <Navbar.Link href="/rules">Rules</Navbar.Link>
@@ -47,14 +49,29 @@ export default function Home() {
       </Navbar>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the <a href="./">Descent SMP</a>!
+          Players
         </h1>
-<Grid>
-<Image src="minecraft.png" alt="Minecraft" width={800} height={200} />
-</Grid>
-<Grid>
-<Image src="lg_group.png" alt="Large Group" width={564} height={654} />
-</Grid>
+        <br />
+        <Table
+      aria-label="Example table with dynamic content"
+      css={{
+        height: "auto",
+        minWidth: "100%",
+      }}
+    >
+      <Table.Header columns={playercols}>
+        {(playercol) => (
+          <Table.Column key={playercol.key}>{playercol.label}</Table.Column>
+        )}
+      </Table.Header>
+      <Table.Body items={playerrows}>
+        {(item) => (
+          <Table.Row key={item.key}>
+            {(columnKey) => <Table.Cell>{item[columnKey]}</Table.Cell>}
+          </Table.Row>
+        )}
+      </Table.Body>
+    </Table>
       </main>
       <footer className={styles.footer}>
           Built with ♥ by <Spacer x={0.25} />

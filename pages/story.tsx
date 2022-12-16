@@ -6,6 +6,7 @@ import { Navbar, Link, Text } from "@nextui-org/react";
 import { SunIcon } from "../icons/SunIcon";
 import { MoonIcon } from "../icons/MoonIcon";
 import { Container, Row, Card } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 
 export default function Home() {
   const { setTheme } = useNextTheme();
@@ -19,6 +20,8 @@ export default function Home() {
       </Head>
       <Navbar isCompact isBordered variant="floating">
         <Navbar.Brand>
+        <Image src="bloodmoon256.png" alt="Blood Moon" width={32} height={32} />
+        <Spacer x={0.25} />
           <Text b color="inherit" hideIn="xs">
             DecentSMP
           </Text>
@@ -26,11 +29,11 @@ export default function Home() {
         <Navbar.Content hideIn="xs" variant="highlight-rounded">
         <Navbar.Link href="/">Home</Navbar.Link>
           <Navbar.Link isActive href="/story">Story</Navbar.Link>
-          <Navbar.Link href="#">Players</Navbar.Link>
+          <Navbar.Link href="/players">Players</Navbar.Link>
           <Navbar.Link href="#">Teams</Navbar.Link>
-          <Navbar.Link href="#">Content Creators</Navbar.Link>
-          <Navbar.Link href="#">Rules</Navbar.Link>
-          <Navbar.Link href="#">Schedule</Navbar.Link>
+          <Navbar.Link href="/content-creators">Content Creators</Navbar.Link>
+          <Navbar.Link href="/rules">Rules</Navbar.Link>
+          <Navbar.Link href="/schedule">Schedule</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Item>
