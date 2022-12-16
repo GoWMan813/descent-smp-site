@@ -40,10 +40,6 @@ export default function Story() {
           </Card>
         </Container>
       </main>
-      <footer className={styles.footer}>
-          Built with ♥ by <Spacer x={0.25} />
-            <Link target="_blank" href="https://github.com/GoWMan813">GoWMan</Link>
-      </footer>
     </div>
   );
 }

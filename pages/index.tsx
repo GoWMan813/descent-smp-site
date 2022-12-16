@@ -22,10 +22,6 @@ export default function Home() {
           <Image src='lg_group.png' alt='Large Group' width={564} height={654} />
         </Grid>
       </main>
-      <footer className={styles.footer}>
-          Built with ♥ by <Spacer x={0.25} />
-            <Link target="_blank" href="https://github.com/GoWMan813">GoWMan</Link>
-      </footer>
     </div>
   );
 }
