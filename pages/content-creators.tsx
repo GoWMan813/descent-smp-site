@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Spacer, Link, Avatar } from '@nextui-org/react';
+import { Avatar } from '@nextui-org/react';
 import styles from '../styles/Home.module.css'
 
 export default function Creators() {
@@ -72,7 +72,18 @@ export default function Creators() {
             <h2>ConfuzzedCat</h2>
             <p>Denmark cat that is only slightly confuzzed. Let's Minecraft meow.</p>
           </a>
-
+          <a
+            href="https://www.youtube.com/@Boyjedi"
+            target="_blank"
+            className={styles.card}
+          >
+            <Avatar
+          src="https://yt3.ggpht.com/YBD0mFTZ-tS08uqE1yxpHDpvTDytyygGErnD6O4MhZ7ik06Bg6UKu9Q8cc4kIHhkqqkEdUKNUg=s88-c-k-c0x00ffffff-no-rj"
+          css={{ size: "$20" }}
+        />
+            <h2>BoyJedi</h2>
+            <p>Minecraft YouTuber who needs to upload more frequently. For legal reasons not a real jedi.</p>
+          </a>
           <a
             href="https://www.twitch.tv/gowman"
             target="_blank"
