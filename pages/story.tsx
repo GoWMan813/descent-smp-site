@@ -1,16 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useTheme as useNextTheme } from 'next-themes'
-import { Spacer, Switch, useTheme } from '@nextui-org/react'
-import { Navbar, Link, Text } from "@nextui-org/react";
-import { SunIcon } from "../icons/SunIcon";
-import { MoonIcon } from "../icons/MoonIcon";
-import { Container, Row, Card } from '@nextui-org/react';
-import { Image } from '@nextui-org/react';
+import { Container, Row, Card, Text, Link, Spacer } from '@nextui-org/react'
 
-export default function Home() {
-  const { setTheme } = useNextTheme();
-  const { isDark } = useTheme();
+export default function Story() {
   return (
     <div className={styles.container}>
       <Head>
@@ -48,6 +40,10 @@ export default function Home() {
           </Card>
         </Container>
       </main>
+      <footer className={styles.footer}>
+          Built with ♥ by <Spacer x={0.25} />
+            <Link target="_blank" href="https://github.com/GoWMan813">GoWMan</Link>
+      </footer>
     </div>
   );
 }

@@ -1,15 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useTheme as useNextTheme } from 'next-themes'
-import { Spacer, Switch, useTheme } from '@nextui-org/react'
-import { Navbar, Link, Text } from "@nextui-org/react";
-import { SunIcon } from "../icons/SunIcon";
-import { MoonIcon } from "../icons/MoonIcon";
-import { Table } from '@nextui-org/react';
+import { Table, Link, Spacer } from '@nextui-org/react';
 import { playercols, playerrows } from '../components/players';
-import { Image } from '@nextui-org/react';
 
-export default function Home() {
+export default function Players() {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>Players</h1>
         <br />
         <Table
-          aria-label='Example table with dynamic content'
+          aria-label='Players'
           css={{
             height: 'auto',
             minWidth: '100%',
@@ -39,6 +33,10 @@ export default function Home() {
           </Table.Body>
         </Table>
       </main>
+      <footer className={styles.footer}>
+          Built with ♥ by <Spacer x={0.25} />
+            <Link target="_blank" href="https://github.com/GoWMan813">GoWMan</Link>
+      </footer>
     </div>
   );
 }

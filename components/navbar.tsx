@@ -1,4 +1,4 @@
-import { Navbar, Link, Text, Grid } from '@nextui-org/react';
+import { Navbar, Text } from '@nextui-org/react';
 import { Image } from '@nextui-org/react';
 import { useTheme as useNextTheme } from 'next-themes';
 import { Spacer, Switch, useTheme } from '@nextui-org/react';
@@ -26,7 +26,7 @@ const NavLinks: NavLink[] = [
   },
   {
     name: 'Teams',
-    href: '#',
+    href: '/teams',
   },
   {
     name: 'Content Creators',
