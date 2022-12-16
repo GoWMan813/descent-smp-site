@@ -28,7 +28,7 @@ export const playercols = [
       key: "2",
       name: "CloverPetal",
       role: "Player",
-      title: "",
+      title: "The Nicest",
       status: "Active",
     },
     {
@@ -112,7 +112,7 @@ export const playercols = [
         key: "14",
         name: "Agil",
         role: "Admin",
-        title: "",
+        title: "Babygirl Generator",
         status: "Active",
     },
     {
