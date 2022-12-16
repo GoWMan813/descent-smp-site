@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Table, Link, Spacer } from '@nextui-org/react';
+import { Table } from '@nextui-org/react';
 import { playercols, playerrows } from '../components/players';
 
 export default function Players() {

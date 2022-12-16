@@ -47,7 +47,7 @@ export default function Creators() {
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.twitch.tv/waldoandfriends"
             target="_blank"
             className={styles.card}
           >
@@ -58,6 +58,33 @@ export default function Creators() {
             <h2>WaldoAndFriends</h2>
             <p>
             Variety streamer from the Netherlands, definitely not 30 yet...  Can you find me?
+            </p>
+          </a>
+          <a
+            href="https://www.twitch.tv/confuzzedcat"
+            target="_blank"
+            className={styles.card}
+          >
+            <Avatar
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/5d65b350-e89e-4a9e-a7bc-31b41e883d71-profile_image-300x300.png"
+          css={{ size: "$20" }}
+        />
+            <h2>ConfuzzedCat</h2>
+            <p>Denmark cat that is only slightly confuzzed. Let's Minecraft meow.</p>
+          </a>
+
+          <a
+            href="https://www.twitch.tv/gowman"
+            target="_blank"
+            className={styles.card}
+          >
+            <Avatar
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/dd70b1ec-b906-416a-8a56-d067bda64514-profile_image-300x300.png"
+          css={{ size: "$20" }}
+        />
+            <h2>GoWMan</h2>
+            <p>
+            Alien from a distant planet that's apparently waifu material...
             </p>
           </a>
         </div>
