@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <Navbar isCompact isBordered variant="floating">
         <Navbar.Brand>
-        <Image src="bloodmoon256.png" alt="Blood Moon" width={32} height={32} />
+        <Image src="bloodMoon256.png" alt="Blood Moon" width={32} height={32} />
         <Spacer x={0.25} />
           <Text b color="inherit" hideIn="xs">
             DecentSMP
