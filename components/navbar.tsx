@@ -32,10 +32,6 @@ const NavLinks: NavLink[] = [
     name: 'Rules',
     href: '/rules',
   },
-  {
-    name: 'Schedule',
-    href: '/schedule',
-  },
 ];
 
 function SMPNavbar() {
