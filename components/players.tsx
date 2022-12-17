@@ -59,7 +59,7 @@ export const playercols = [
         role: "Player",
         title: "Friends Still Looking for Him",
         status: "Active",
-        deaths: "16",
+        deaths: "18",
     },
     {
         key: "6",
