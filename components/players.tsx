@@ -15,6 +15,10 @@ export const playercols = [
       key: "status",
       label: "STATUS",
       },
+      {
+        key: "deaths",
+        label: "DEATHS",
+        },
   ];
  export const playerrows = [
     {
@@ -23,6 +27,7 @@ export const playercols = [
       role: "Player",
       title: "Marco",
       status: "Active",
+      deaths: "0",
     },
     {
       key: "2",
@@ -30,6 +35,7 @@ export const playercols = [
       role: "Player",
       title: "The Nicest",
       status: "Active",
+      deaths: "0",
     },
     {
       key: "3",
@@ -37,6 +43,7 @@ export const playercols = [
       role: "Player",
       title: "Vie Gang",
       status: "Active",
+      deaths: "0",
     },
     {
       key: "4",
@@ -44,6 +51,7 @@ export const playercols = [
       role: "Player",
       title: "Basket on Wheels",
       status: "Active",
+      deaths: "1",
     },
     {
         key: "5",
@@ -51,6 +59,7 @@ export const playercols = [
         role: "Player",
         title: "Friends Still Looking for Him",
         status: "Active",
+        deaths: "12",
     },
     {
         key: "6",
@@ -58,6 +67,7 @@ export const playercols = [
         role: "Player",
         title: "Zee",
         status: "Active",
+        deaths: "1",
     },
     {
         key: "7",
@@ -65,6 +75,7 @@ export const playercols = [
         role: "Player",
         title: "Has Cookies",
         status: "Active",
+        deaths: "1",
     },
     {
         key: "8",
@@ -72,6 +83,7 @@ export const playercols = [
         role: "Player",
         title: "Torchless",
         status: "Active",
+        deaths: "0",
     },
     {
         key: "9",
@@ -79,6 +91,7 @@ export const playercols = [
         role: "Player",
         title: "Doesn't Fail",
         status: "Active",
+        deaths: "0",
     },
     {
         key: "10",
@@ -86,6 +99,7 @@ export const playercols = [
         role: "Admin",
         title: "Alien Waifu",
         status: "Active",
+        deaths: "0",
     },
     {
         key: "11",
@@ -93,6 +107,7 @@ export const playercols = [
         role: "Player",
         title: "Only Slightly Confuzzed",
         status: "Active",
+        deaths: "0",
     },
     {
         key: "12",
@@ -100,6 +115,7 @@ export const playercols = [
         role: "Admin",
         title: "The Boss",
         status: "Active",
+        deaths: "2",
     },
     {
         key: "13",
@@ -107,6 +123,7 @@ export const playercols = [
         role: "Admin",
         title: "Not Quite Ripe",
         status: "Active",
+        deaths: "0",
     },
     {
         key: "14",
@@ -114,6 +131,7 @@ export const playercols = [
         role: "Admin",
         title: "Babygirl Generator",
         status: "Active",
+        deaths: "0",
     },
     {
       key: "15",
@@ -121,13 +139,15 @@ export const playercols = [
       role: "Player",
       title: "Polo",
       status: "Active",
+      deaths: "0",
    },
    {
     key: "16",
-    name: "Dbest",
+    name: "Dbest_",
     role: "Player",
     title: "The Best",
     status: "Active",
+    deaths: "0",
     },
     {
       key: "17",
@@ -135,6 +155,7 @@ export const playercols = [
       role: "Player",
       title: "Baby Shark",
       status: "Active",
+      deaths: "0",
       },
       {
         key: "18",
@@ -142,6 +163,7 @@ export const playercols = [
         role: "Player",
         title: "The Ish",
         status: "Active",
+        deaths: "0",
         },
         {
           key: "19",
@@ -149,6 +171,7 @@ export const playercols = [
           role: "Player",
           title: "Pookie",
           status: "Active",
+          deaths: "0",
           },
           {
             key: "20",
@@ -156,6 +179,7 @@ export const playercols = [
             role: "Player",
             title: "Not A Jedi",
             status: "Active",
+            deaths: "0",
             },
             {
               key: "21",
@@ -163,6 +187,7 @@ export const playercols = [
               role: "Player",
               title: "Giga Chad",
               status: "Active",
+              deaths: "0",
               },
               {
                 key: "22",
@@ -170,5 +195,6 @@ export const playercols = [
                 role: "Player",
                 title: "Ricey",
                 status: "Active",
+                deaths: "0",
                 },
   ];
