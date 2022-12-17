@@ -98,6 +98,22 @@ export default function Creators() {
             Alien from a distant planet that's apparently waifu material...
             </p>
           </a>
+          <a
+            href="https://www.twitch.tv/gowman"
+            target="_blank"
+            className={styles.card}
+          >
+            <Avatar
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/88969637-3d54-4965-8d46-990c3ffcd9e8-profile_image-300x300.png"
+          css={{ size: "$20" }}
+        />
+            <h2>Ricedneon</h2>
+            <p>
+            Bald... Obnoxious... Vulgar... Creative?
+            Always eating on stream...
+            Giggity
+            </p>
+          </a>
         </div>
       </main>
     </div>

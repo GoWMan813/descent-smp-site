@@ -157,4 +157,18 @@ export const playercols = [
             title: "Not A Jedi",
             status: "Active",
             },
+            {
+              key: "21",
+              name: "Triogami",
+              role: "Player",
+              title: "Giga Chad",
+              status: "Active",
+              },
+              {
+                key: "22",
+                name: "Ricedneon",
+                role: "Player",
+                title: "Ricey",
+                status: "Active",
+                },
   ];
