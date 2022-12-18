@@ -44,7 +44,11 @@ export default function Players() {
           <Table.Header columns={playercols}>
             {(playercol) => <Table.Column key={playercol.key}>{playercol.label}</Table.Column>}
           </Table.Header>
-          <Table.Body items={!deaths ? [] : playerrows}>
+          <Table.Body
+            items={
+              !deaths ? [] : playerrows.sort((a, b) => parseInt(b.deaths) - parseInt(a.deaths))
+            }
+          >
             {(item) => {
               const death = deaths.find((death) => death.name === item.name);
               if (death) {
