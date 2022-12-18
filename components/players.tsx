@@ -207,7 +207,7 @@ export const playerrows = [
   },
   {
     key: '24',
-    name: 'Melting',
+    name: 'MeIting',
     role: 'Player',
     title: 'Melt',
     status: 'Active',
