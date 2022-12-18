@@ -23,20 +23,26 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     return;
   }
 
+  let body = req.body;
+  // parse body if not already parsed
+  if (typeof body === 'string') {
+    body = JSON.parse(body);
+  }
+
   // Error on no body
-  if (!req.body) {
+  if (!body) {
     res.status(400).json({ message: 'Bad Request', success: false });
     return;
   }
 
   // Error on no body.name
-  if (!req.body.name) {
+  if (!body.name) {
     res.status(400).json({ message: 'Bad Request', success: false });
     return;
   }
 
   // Error on no body.death
-  if (!req.body.death) {
+  if (!body.death) {
     res.status(400).json({ message: 'Bad Request', success: false });
     return;
   }
@@ -48,9 +54,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (!deathsExists) {
     // No deaths.json, create new
     const newDeath: Death = {
-      name: req.body.name,
+      name: body.name,
       deaths: 1,
-      causes: [req.body.death],
+      causes: [body.death],
     };
 
     fs.writeFileSync('./deaths.json', JSON.stringify([newDeath], null, 2));
@@ -64,21 +70,21 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const deaths = JSON.parse(rawDeaths) as Death[];
 
-  const death = deaths.find((d) => d.name === req.body.name);
+  const death = deaths.find((d) => d.name === body.name);
 
   if (!death) {
     // No user found, create new to add to deaths.json
     const newDeath: Death = {
-      name: req.body.name,
+      name: body.name,
       deaths: 1,
-      causes: [req.body.death],
+      causes: [body.death],
     };
 
     deaths.push(newDeath);
   } else {
     // User found, update deaths.json
     death.deaths++;
-    death.causes.push(req.body.death);
+    death.causes.push(body.death);
   }
 
   // Write to deaths.json
