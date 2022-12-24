@@ -80,7 +80,7 @@ export default function Creators() {
             <h2>GoWMan</h2>
             <p>Alien from a distant planet that's apparently waifu material...</p>
           </a>
-          <a href='https://www.twitch.tv/gowman' target='_blank' className={styles.card}>
+          <a href='https://www.twitch.tv/ricedneon' target='_blank' className={styles.card}>
             <Avatar
               src='https://static-cdn.jtvnw.net/jtv_user_pictures/88969637-3d54-4965-8d46-990c3ffcd9e8-profile_image-300x300.png'
               css={{ size: '$20' }}
